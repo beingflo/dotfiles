@@ -15,6 +15,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'valloric/youcompleteme'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'mbbill/undotree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -113,6 +114,9 @@ set splitright
 " NERDTREE
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
+
+map <C-b> :UndotreeToggle<CR>
+let g:undotree_SetFocusWhenToggle = 1
 
 " Automatically open Nerdtree if no file provided
 autocmd StdinReadPre * let s:std_in=1
