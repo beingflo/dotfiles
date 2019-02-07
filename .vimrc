@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'valloric/youcompleteme'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mbbill/undotree'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,6 +39,9 @@ let g:airline#extensions#tabline#enabled = 1
 imap jj <Esc>
 
 syntax enable
+
+set background=dark
+colorscheme gruvbox
 
 " TABS
 set tabstop=4
