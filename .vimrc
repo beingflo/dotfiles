@@ -32,8 +32,6 @@ filetype plugin indent on    " required
 let g:airline_theme='bubblegum'
 let g:airline#extensions#tabline#enabled = 1
 
-let NERDTreeQuitOnOpen=1
-
 imap jj <Esc>
 
 syntax enable
@@ -111,13 +109,14 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-V> :sp<CR>
 nnoremap <C-B> :vsp<CR>
 
+set hidden
+
 set splitbelow
 set splitright
 
-nnoremap <C-T> :tabnew 
-
 " NERDTREE
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
 
 " Automatically open Nerdtree if no file provided
 autocmd StdinReadPre * let s:std_in=1
