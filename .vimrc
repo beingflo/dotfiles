@@ -84,6 +84,9 @@ augroup resCur
 	autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END
 
+set undofile
+set undodir=~/.vim/undodir
+
 " SEARCH
 set incsearch
 set hlsearch
