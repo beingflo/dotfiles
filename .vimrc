@@ -36,8 +36,8 @@ filetype indent on
 
 set viminfo='20,<1000,s10,h
 
-nnoremap <C-L> :tabnext<CR>
-nnoremap <C-H> :tabprevious<CR>
+nnoremap <S-L> :tabnext<CR>
+nnoremap <S-H> :tabprevious<CR>
 
 map tl :tabmove +1<CR>
 map th :tabmove -1<CR>
@@ -68,13 +68,15 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
 " SPLITS
-nnoremap <S-J> <C-W><C-J>
-nnoremap <S-K> <C-W><C-K>
-nnoremap <S-L> <C-W><C-L>
-nnoremap <S-H> <C-W><C-H>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
-nnoremap <S-V> :sp<CR>
-nnoremap <S-B> :vsp<CR>
+nnoremap <C-V> :sp<CR>
+nnoremap <C-B> :vsp<CR>
 
 set splitbelow
 set splitright
+
+nnoremap <C-T> :tabnew 
