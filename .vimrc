@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'valloric/youcompleteme'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -73,9 +74,6 @@ set viminfo='20,<1000,s10,h
 nnoremap <S-L> :bn<CR>
 nnoremap <S-H> :bp<CR>
 
-map tl :tabmove +1<CR>
-map th :tabmove -1<CR>
-
 set splitbelow
 set splitright
 
@@ -101,14 +99,8 @@ set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
-" SPLITS
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-nnoremap <C-V> :sp<CR>
-nnoremap <C-B> :vsp<CR>
+"nnoremap <C-V> :sp<CR>
+"nnoremap <C-B> :vsp<CR>
 
 set hidden
 
