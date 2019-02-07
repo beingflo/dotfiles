@@ -11,6 +11,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -27,9 +29,13 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+let g:airline_theme='bubblegum'
+let g:airline#extensions#tabline#enabled = 1
+
+let NERDTreeQuitOnOpen=1
+
 imap jj <Esc>
 
-" SYNTAGS
 syntax enable
 
 " TABS
@@ -65,8 +71,8 @@ filetype indent on
 
 set viminfo='20,<1000,s10,h
 
-nnoremap <S-L> :tabnext<CR>
-nnoremap <S-H> :tabprevious<CR>
+nnoremap <S-L> :bn<CR>
+nnoremap <S-H> :bp<CR>
 
 map tl :tabmove +1<CR>
 map th :tabmove -1<CR>
