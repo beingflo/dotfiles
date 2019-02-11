@@ -43,6 +43,8 @@ syntax enable
 set background=dark
 colorscheme gruvbox
 
+set autowriteall
+
 " TABS
 set tabstop=4
 set softtabstop=4
