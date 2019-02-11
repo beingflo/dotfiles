@@ -13,4 +13,7 @@ Shell: [fish](https://fishshell.com/)
 Launcher: [Rofi](https://github.com/DaveDavenport/rofi)
 
 Launcher Theme: [paper-float](https://github.com/DaveDavenport/rofi-themes/tree/master/Official%20Themes)
--> Invoke using 'rofi -show run -font "Ubuntu 28" -theme paper-float -lines 8'
+
+  -> Invoke using 'rofi -show run -font "Ubuntu 28" -theme paper-float -lines 8'
+
+Disable Ubuntu dock: 'dconf-editor': org/gnome/shell/extensions/dash-to-dock disable auto-hide, dock-fixed

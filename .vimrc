@@ -17,6 +17,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mbbill/undotree'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'hdima/python-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,14 +41,15 @@ imap jj <Esc>
 
 syntax enable
 
-set background=dark
-colorscheme gruvbox
+"set background=dark
+"colorscheme falcon
 
 set autowriteall
 
 " TABS
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set expandtab
 
 set cindent
